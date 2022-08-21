@@ -1,2 +1,2 @@
 # JS-music-player
-See live preview at https://ab-musicplayer.netlify.app/
+See live preview at https://lifelineaudio.netlify.app/
