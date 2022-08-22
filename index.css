@@ -2083,6 +2083,8 @@ body {
             width: 83px;
         }
 
+        header .song-side .scrollable {
+            height: 57%;}
         header .menu-side {
             width: 80%;
         }
