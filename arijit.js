@@ -679,3 +679,33 @@ music.addEventListener('ended', ()=>{
 
   
 })
+
+// collaps button
+
+let collaps_btn = document.getElementById('collaps_btn');
+let menu_side = document.getElementsByClassName('menu-side')[0];
+
+collaps_btn.addEventListener('click',()=>{
+  menu_side.style.transform ="unset";
+  collaps_btn.style.opacity=0;
+})
+
+let song_side = document.getElementsByClassName('song-side')[0];
+
+song_side.addEventListener('click',()=>{
+  if(screen.width<960){
+
+    menu_side.style.transform ="translateX(-100%)";
+  }
+  collaps_btn.style.opacity=1;
+})
+
+// if(screen.width>960){
+//    collaps_btn.style.display= "none";
+// }
+// else{
+
+//   collaps_btn.style.display= "";
+// }
+
+// collaps button end

@@ -1,4 +1,5 @@
 console.log("Enjoy adfree music");
+
 let music = new Audio("");
 // music.play();
 
@@ -198,11 +199,7 @@ songs.forEach((element) => {
   let card = document.createElement("a");
   card.href = "#" + id;
 
-
-
-
-
-  console.log(id);
+  // console.log(id);
   card.classList.add("card");
   card.innerHTML = ` 
   <img src="${poster}" alt=""/>
@@ -235,7 +232,6 @@ songs.forEach((element) => {
     }
   });
 
-  
   // card.addEventListener('click',(e)=>{
   //   let search_index = card.href;
   //   console.log(e.target.id);
@@ -758,3 +754,39 @@ music.addEventListener("ended", () => {
   }
   console.log(x);
 });
+
+
+
+// collaps button
+
+let collaps_btn = document.getElementById('collaps_btn');
+let menu_side = document.getElementsByClassName('menu-side')[0];
+
+collaps_btn.addEventListener('click',()=>{
+  menu_side.style.transform ="unset";
+  collaps_btn.style.opacity=0;
+})
+
+let song_side = document.getElementsByClassName('song-side')[0];
+
+song_side.addEventListener('click',()=>{
+  if(screen.width<960){
+
+    menu_side.style.transform ="translateX(-100%)";
+  }
+  collaps_btn.style.opacity=1;
+})
+
+// if(screen.width>960){
+//    collaps_btn.style.display= "none";
+// }
+// if(screen.width<960){
+//    collaps_btn.style.display= "block";
+// }
+// collaps button end
+
+
+if(screen.width<650){
+  
+
+}
