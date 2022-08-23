@@ -227,7 +227,7 @@ songs.forEach((element) => {
       if (input.value == 0) {
         search_results.style.display = "none";
       } else {
-        search_results.style.display = "block";
+        search_results.style.display = "";
       }
     }
   });
@@ -787,6 +787,6 @@ song_side.addEventListener('click',()=>{
 
 
 if(screen.width<650){
-  
+
 
 }

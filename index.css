@@ -1460,6 +1460,10 @@ body {
 
 /* login and signup form end */
 
+#collaps_btn {
+    display: none;
+
+ }
 
 
 
@@ -2065,6 +2069,9 @@ body {
             /* color: #721256e3; */
             /* color: rgb(101, 34, 101); */
         }
+
+        header .song-side .scrollable {
+            height: 54%;}
     }
     
     @media screen and (max-width:400px) {
@@ -2083,8 +2090,7 @@ body {
             width: 83px;
         }
 
-        header .song-side .scrollable {
-            height: 57%;}
+       
         header .menu-side {
             width: 80%;
         }
